@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-ez0xFdth5V7Z9ts6Z0L9KQxFr6z9NIOdca1Wtmf8r7Lqclw4MAZI54O4be5FaRI8" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <title>Mon jeu des dés</title>
+</head>
+<body>
+    <div id="game-container">
+        <div id="dice-controls">
+            <button id="new-game">🎮 Nouvelle partie</button>
+        </div>
+        <div id="dice"></div>
+        <div id="dice-controls">
+            <button id="roll-dice">🎲 Lancer le dé</button>
+        </div>
+        <div id="dice-controls"></div>
+            <button id="hold">✋ Hold</button>
+        </div>
+        <div id="player-container">
+            <div class="player" id="player1">
+                <strong>Joueur 1:</strong>
+                <div>ROUND: <span id="round1">0</span></div>
+                <div>GLOBAL: <span id="score1">0</span></div>
+            </div>
+            <div class="player" id="player2">
+                <strong>Joueur 2:</strong>
+                <div>
+                    <div>ROUND: <span id="round2">0</span></div>
+                    <div>GLOBAL: <span id="score2">0</span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

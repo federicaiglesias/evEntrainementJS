@@ -1,0 +1,122 @@
+body {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background-color: #cfe6eef6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#player-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.player {
+    margin: 20px;
+    font-size: 24px;
+}
+
+#round1, #round2 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+#score1, #score2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#dice-controls {
+    margin-top: 15px;
+}
+
+button {
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    cursor: pointer;
+    background-color: #308dca;
+    color: #fff;
+    border: 1px solid #195c88 ;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #77b2da;
+}
+/* Dice style */
+#dice {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid #333;
+    margin-top: 20px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Dice dot style */
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* Animation for dice rotation */
+@keyframes diceRoll {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(180deg); }
+    50% { transform: rotate(360deg); }
+    75% { transform: rotate(540deg); }
+    100% { transform: rotate(720deg); }
+}
+/* Media query responsive design */
+@media (max-width: 600px) {
+    #dice {
+        width: 60px;
+        height: 60px;
+        font-size: 14px;
+    }
+
+    .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    #round1, #round2 {
+        font-size: 20px;
+    }
+
+    .player {
+        font-size: 14px;
+    }
+
+    #score1, #score2 {
+        font-size: 24px;
+    }
+
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
